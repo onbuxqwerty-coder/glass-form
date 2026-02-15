@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact VIST</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="circuit-lines"></div>
+    </div>
+
+    <div class="container">
+        <div class="contact-card">
+            <div class="card-corner top-left"></div>
+            <div class="card-corner top-right"></div>
+            <div class="card-corner bottom-left"></div>
+            <div class="card-corner bottom-right"></div>
+
+            <h1 class="title">CONTACT VIST</h1>
+
+            <div class="subtitle">
+                <h2>Get in Touch</h2>
+                <p>We're here to help you.</p>
+            </div>
+
+            <form id="contactForm" action="save_message.php" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>SEND MESSAGE</span>
+                </button>
+            </form>
+
+            <div id="formMessage" class="form-message"></div>
+        </div>
+
+        <div class="info-panel">
+            <div class="info-section">
+                <h3>— CONTACT INFO_</h3>
+                <p><strong>Email:</strong> sales@vist.net.ua</p>
+                <p><strong>Phone:</strong> +38 (056) 370-0707</p>
+                <p><strong>Address:</strong><br>Князя Ярослава Мудрого, 27,<br>м.Дніпро,<br>Україна</p>
+            </div>
+
+            <div class="info-section">
+                <h3>— LEGAL_</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+
+            <p class="copyright">&copy; 2024 VIST Inc. All Rights Reserved</p>
+
+            <div class="status">
+                <span>System Status:</span>
+                <span class="status-online">Online</span>
+                <span class="status-dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
